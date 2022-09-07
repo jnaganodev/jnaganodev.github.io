@@ -162,7 +162,7 @@ input[type="reset"]:not(:disabled):active {
   input[type="reset"]:not(:disabled):hover {
     box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
   }
-  
+
 }
 
 button:focus,
@@ -785,39 +785,6 @@ summary:focus {
 }
 ::-webkit-scrollbar-button:horizontal:end {
   width: 16px;
+0
   background-image: svg-load("./icon/button-right.svg");
-}
-menu{
-  width:100%;
-  height:100vh;
-}
-nav{
-  width: 100%;
-  height: 50px;
-  background-color: #0000;
-  font-family:"Pixelated MS Sans Serif", Arial;
-  line-height: 50px;
-}
-nav ul{
-  float: left;
-  margin-right: 30px;
-}
-nav ul li{
-  list-style-type: none;
-  display: inline-block;
-  transition: 0.7s all;
-}
-nav ul li:hover{
-  background-color:#088;
-}
-nav ul li a{
-  text-decoration: none;
-  color: #fff;
-  padding: 30px;
-}
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(2, 50px);
-}
 }
