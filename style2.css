@@ -84,6 +84,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 body {
   font-family: Arial;
   font-size: 12px;
@@ -161,6 +162,7 @@ input[type="reset"]:not(:disabled):active {
   input[type="reset"]:not(:disabled):hover {
     box-shadow: var(--border-sunken-outer), var(--border-sunken-inner);
   }
+  
 }
 
 button:focus,
@@ -812,5 +814,10 @@ nav ul li a{
   text-decoration: none;
   color: #fff;
   padding: 30px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 50px);
 }
 }
