@@ -788,3 +788,7 @@ summary:focus {
 0
   background-image: svg-load("./icon/button-right.svg");
 }
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
