@@ -31,6 +31,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #00000;
+  font-family:"Pixelated MS Sans Serif", Arial;
 }
 
 .topnav a {
@@ -41,6 +42,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family:"Pixelated MS Sans Serif", Arial;
 }
 
 .topnav a:hover {
@@ -78,35 +80,6 @@ body {
     text-align: left;
   }
 }
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
 </style>
 </head>
 <body>
@@ -124,8 +97,9 @@ body {
   <center><img src="https://media.giphy.com/media/oV6bEkYSxhPELj5peK/giphy.gif" class="center"></center>
   <center><b><i><strong>"I saw an angel in the sky and jumped to set him free"</strong></i></b></center>
 <!--Windows Boxes-->
-
+<h2>
       <div class="window" style="display: inline-block;">
+      <div class="responsive">
         <div class="title-bar">
           <div class="title-bar-text">A Window With Stuff In It</div>
           <!--W98 Box Buttons-->
@@ -151,12 +125,14 @@ body {
           <p>Add Shopify Clothing Embed Here.</p>
         </div>
       </div>
-    
-<!--Box 2 Image/Poster-->
+      </div>
+</div>
+</h2>    
+<!--Box 2 Image/Poster
+MAke the image responsive jfc i want to die-->
 <center>
-<div class="row">
-<div class="col-3 menu">
 <div class="window" style="display: inline-block;">
+<div class="responsive">
   <div class="title-bar">
     <div class="title-bar-text">Fall-Winter '22 Collection : Love and War </div>
     <!--W98 Box Buttons-->
@@ -179,14 +155,16 @@ body {
     </div>
   </div>
   <div class="window-body">
-    <p><img src="https://i.postimg.cc/sX2hnkf2/poster.png"></p>
+    <p><img src="https://i.postimg.cc/sX2hnkf2/poster.png" class="responsive"></p>
   </div>
+</div>
 </div>
 </div>
 </div>
 <h3>
 <!--Box 3 Spotify-->
 <div class="window" style="display: inline-block;">
+<div class="responsive">
   <div class="title-bar">
     <div class="title-bar-text">Shopping Playlist</div>
     <!--W98 Box Buttons-->
@@ -211,6 +189,8 @@ body {
   <div class="window-body">
     <p><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2IFw489En4fWs04qGJPeCF?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </p>
+</div>
+</div>
 </div>
 </div>
 </h3>
