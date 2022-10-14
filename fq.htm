@@ -88,6 +88,7 @@ body {
   <a href="indi.html" class="active">home</a>
   <a href="https://www.etsy.com/shop/mountainbluestudios">shop</a>
   <a href="fq.htm">faq</a>
+  <a href="fq.htm"></a>
   <a href="https://www.instagram.com/creatio____hominis"><i class="fa fa-instagram"></i></a>
   <a href="#"><i class="fa fa-twitter"></i></a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -174,5 +175,15 @@ body {
   </div>
 </div>
 </h2>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
