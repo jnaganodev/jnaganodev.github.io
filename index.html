@@ -81,6 +81,14 @@ body {
   }
 }
 </style>
+<script>
+        $(function () {
+            $("#content").draggable({ handle: "window" });
+        });
+        $(function () {
+            $("#content1").draggable({ handle: "window" });
+        });
+    </script>
 </head>
 <body>
   <header>
@@ -210,6 +218,25 @@ function myFunction() {
   }
 }
 </script>
+ <script>
+        function minimize() {
+            document.getElementById("Minimize").style.display = "none";
+        }
+        function maximize() {
+            document.getElementById("Minimize").style.display = "block";
+        }
+        function exit() {
+            document.getElementById("control-box close-box").style.display = "none";
+            document.getElementById("img").style.display = "none";
+
+        }
+
+        $('#logoButton').click(function () {
+            $('#logo').toggleClass('hidden')
+        });
+
+    </script>
+
 </body>
 <center><p style="Color:white"><i>Creatio Hominis © 2022</i></p></center>
 </html>
