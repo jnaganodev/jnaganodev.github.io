@@ -98,27 +98,6 @@ body {
   </a>
 </div>
     </header>
-    <audio id="myaudio" controls>
-  <source src="intro.mp3" type="audio/mpeg">
-</audio>
-
-<br /><br />
-<button onclick="toggle(this);">Hide Audio</button>
-
-<script>
-  let toggle = button => {
-     let element = document.getElementById("myaudio");
-     let hidden = element.getAttribute("hidden");
-
-     if (hidden) {
-        element.removeAttribute("hidden");
-        button.innerText = "Hide Audio";
-     } else {
-        element.setAttribute("hidden", "hidden");
-        button.innerText = "Show Audio";
-     }
-  }
-</script>
   <!--Logo & Quote-->
   <b><center><img src="https://i.postimg.cc/6qL6zqm5/ezgif-com-gif-maker-1.gif" class="responsive"></center>
   <center><b><i><strong>"The mountains are calling....and we must go"</strong></i></b></center>
