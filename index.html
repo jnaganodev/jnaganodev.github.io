@@ -81,23 +81,16 @@ body {
   }
 }
 </style>
- <script>
-        function min() {
-            document.getElementById("Minimize").style.display = "none";
-        }
-        function max() {
-            document.getElementById("Maxamize").style.display = "block";
-        }
-        function exit() {
-            document.getElementById("Close").style.display = "none";
-
-        }
-
-        $('title-bar-controls').click(function () {
-            $('title-bar-controls').toggleClass('hidden')
-        });
-
-    </script>
+<script>
+function myFunction() {
+  var x = document.getElementById("window-body");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 </head>
 <body>
   <header>
@@ -126,17 +119,17 @@ body {
           <div class="title-bar-text">Commission Info℠</div>
           <!--W98 Box Buttons-->
           <div class="title-bar-controls">
-            <button aria-label="Minimize" onclick="min">
+            <button aria-label="Minimize" onclick="myFunction()">
               <svg width="6" height="2" viewBox="0 0 6 2" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="6" height="2" fill="black"/>
             </svg>
           </button>
-            <button aria-label="Maximize" onclick="max">
+            <button aria-label="Maximize" onclick="myFunction()">
               <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0H0V2V8V9H1H8H9V8V2V0ZM8 2H1V8H8V2Z" fill="black"/>
               </svg>
             </button>
-            <button aria-label="Close" onclick="exit">
+            <button aria-label="Close" onclick="myFunction()">
               <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H1H2V1H3V2H4H5V1H6V0H7H8V1H7V2H6V3H5V4H6V5H7V6H8V7H7H6V6H5V5H4H3V6H2V7H1H0V6H1V5H2V4H3V3H2V2H1V1H0V0Z" fill="black"/>
               </svg>
