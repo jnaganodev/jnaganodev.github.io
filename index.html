@@ -91,11 +91,11 @@ body {
     </script>
 <script>
 function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
+  var x = document.getElementById("title-bar");
+  if (x.className === "title-bar") {
     x.className += " responsive";
   } else {
-    x.className = "topnav";
+    x.className = "title-bar";
   }
 }
 </script>
@@ -112,8 +112,8 @@ function myFunction() {
 
         }
 
-        $('#logoButton').click(function () {
-            $('#logo').toggleClass('hidden')
+        $('title-bar').click(function () {
+            $('title-bar').toggleClass('hidden')
         });
 
     </script>
