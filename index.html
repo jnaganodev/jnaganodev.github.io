@@ -134,6 +134,7 @@ body {
       </div>
       </div>
 </div>
+<!--Minimize JS-->
 <script>
    function showOrHideDiv() {
       var v = document.getElementById("showOrHide");
@@ -146,6 +147,15 @@ body {
   ;
   function showOrHideDiv2() {
       var v = document.getElementById("showOrHide2");
+      if (v.style.display === "none") {
+         v.style.display = "block";
+      } else {
+         v.style.display = "none";
+      }
+   }
+  ;
+  function showOrHideDiv3() {
+      var v = document.getElementById("showOrHide3");
       if (v.style.display === "none") {
          v.style.display = "block";
       } else {
@@ -196,7 +206,7 @@ MAke the image responsive jfc i want to die-->
     <div class="title-bar-text">My iPod</div>
     <!--W98 Box Buttons-->
     <div class="title-bar-controls">
-      <button aria-label="Minimize">
+      <button onclick="showOrHideDiv3()" aria-label="Minimize">
         <svg width="6" height="2" viewBox="0 0 6 2" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="6" height="2" fill="black"/>
       </svg>
@@ -213,7 +223,7 @@ MAke the image responsive jfc i want to die-->
       </button>
     </div>
   </div>
-  <div class="window-body">
+  <div id="showOrHide" class="window-body">
     <p><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2IFw489En4fWs04qGJPeCF?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </p>
 </div>
