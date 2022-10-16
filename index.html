@@ -81,6 +81,8 @@ body {
   }
 }
 </style>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
 </head>
 <body>
   <header>
@@ -103,7 +105,7 @@ body {
   <center><b><i><strong>"The mountains are calling....and we must go"</strong></i></b></center>
 <!--Windows Boxes-->
 <h2>
-      <div class="window" style="display: inline-block;">
+      <div id="draggable" class="window" style="display: inline-block;">
       <div class="responsive">
         <div class="title-bar">
           <div class="title-bar-text">Commission Info℠</div>
@@ -136,7 +138,7 @@ body {
 <!--Box 2 Image/Poster
 MAke the image responsive jfc i want to die-->
 <center>
-<div class="window" style="display: inline-block;">
+<div id="draggable" class="window" style="display: inline-block;">
 <div class="responsive">
   <div class="title-bar">
     <div class="title-bar-text">MICKEY HAS DEPRESSION℠</div>
@@ -168,7 +170,7 @@ MAke the image responsive jfc i want to die-->
 </div>
 <h3>
 <!--Box 3 Spotify-->
-<div class="window" style="display: inline-block;">
+<div id="draggable" class="window" style="display: inline-block;">
 <div class="responsive">
   <div class="title-bar">
     <div class="title-bar-text">My iPod</div>
@@ -201,5 +203,19 @@ MAke the image responsive jfc i want to die-->
 </h3>
 <!--Box 4-->
 </body>
+<script>
+$( function() {
+    $( "#draggable" ).draggable();
+  } );
+$( function() {
+    $( "#draggable1" ).draggable();
+  } );
+
+$( function() {
+    $( "#draggable2" ).draggable();
+  } );
+
+
+</script>
 <center><p style="Color:white"><i>Mountain Blue℠ 2022</i></p></center>
 </html>
