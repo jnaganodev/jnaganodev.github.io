@@ -144,15 +144,6 @@ body {
       }
    }
 </script>
-  <script>function showOrHideDiv2() {
-      var v = document.getElementById("showOrHide2");
-      if (v.style.display === "none") {
-         v.style.display = "block";
-      } else {
-         v.style.display = "none";
-      }
-   }
-  </script>
 </h2>    
 <!--Box 2 Image/Poster
 MAke the image responsive jfc i want to die-->
@@ -180,12 +171,20 @@ MAke the image responsive jfc i want to die-->
       </button>
     </div>
   </div>
-  <div id="showOrHideDiv2" class="window-body">
+  <div id="showOrHide2" class="window-body">
     <p><a href="https://www.etsy.com/shop/mountainbluestudios"><img src="https://i.postimg.cc/yYXB7Nwv/mickeyhasdepression.jpg" class="responsive" /></a></p>
   </div>
 </div>
 </div>
-</div>
+</div><script>function showOrHideDiv2() {
+      var v = document.getElementById("showOrHide2");
+      if (v.style.display === "none") {
+         v.style.display = "block";
+      } else {
+         v.style.display = "none";
+      }
+   }
+  </script>
 </div>
 <h3>
 <!--Box 3 Spotify-->
