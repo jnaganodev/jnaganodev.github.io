@@ -121,7 +121,7 @@ body {
               <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0H0V2V8V9H1H8H9V8V2V0ZM8 2H1V8H8V2Z" fill="black"/>
               </svg>
             </button>
-            <button id="toggle" aria-label="Close">
+            <button id="toggle">
               <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H1H2V1H3V2H4H5V1H6V0H7H8V1H7V2H6V3H5V4H6V5H7V6H8V7H7H6V6H5V5H4H3V6H2V7H1H0V6H1V5H2V4H3V3H2V2H1V1H0V0Z" fill="black"/>
               </svg>
@@ -134,6 +134,17 @@ body {
       </div>
       </div>
 </div>
+  <script>
+    const targetDiv = document.getElementById("window-body");
+    const btn = document.getElementById("toggle");
+    btn.onclick = function () {
+      if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+      } else {
+        targetDiv.style.display = "block";
+      }
+    };
+  </script>
 </h2>    
 <!--Box 2 Image/Poster
 MAke the image responsive jfc i want to die-->
@@ -202,17 +213,7 @@ MAke the image responsive jfc i want to die-->
 </div>
 </h3>
 <!--Box 4-->
-<script>
-    const targetDiv = document.getElementById("window-body");
-    const btn = document.getElementById("toggle");
-    btn.onclick = function () {
-      if (targetDiv.style.display !== "none") {
-        targetDiv.style.display = "none";
-      } else {
-        targetDiv.style.display = "block";
-      }
-    };
-  </script>
+<!-- aria-label="Close"-->
 </body>
 <script>
 $( function() {
