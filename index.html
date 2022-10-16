@@ -128,22 +128,16 @@ body {
             </button>
           </div>
         </div>
-        <div class="window-body">
+        <div id="lost"class="window-body">
           <p><marquee behavior=scroll direction="left" scrollamount="5"><a href="https://www.instagram.com/arch___itect/">CURRENTLY ACCEPTING CLIENTS!!! CLICK HERE TO APPLY</a></marquee></br><br> Commission prices are always based on the type, duration, and specifications of each clients project</p>
         </div>
       </div>
       </div>
 </div>
-  <script>
-    const targetDiv = document.getElementById("window-body");
-    const btn = document.getElementById("toggle");
-    btn.onclick = function () {
-      if (targetDiv.style.display !== "none") {
-        targetDiv.style.display = "none";
-      } else {
-        targetDiv.style.display = "block";
-      }
-    };
+<script>
+  $("button").click(function() {
+    $("lost").toggle();
+});
   </script>
 </h2>    
 <!--Box 2 Image/Poster
@@ -213,7 +207,6 @@ MAke the image responsive jfc i want to die-->
 </div>
 </h3>
 <!--Box 4-->
-<!-- aria-label="Close"-->
 </body>
 <script>
 $( function() {
