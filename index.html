@@ -80,6 +80,43 @@ body {
     text-align: left;
   }
 </style>
+<style type="text/css">
+#container
+{
+	width: 100%; height: 100%;
+	position: fixed; top: 0;left: 0;
+	z-index: 100; display: none;
+	background-color: #808080;
+	filter: alpha(opacity=70);
+	-moz-opacity: 0.7;-khtml-opacity: 0.7; opacity: 0.7;
+}
+.window a { text-decoration: none; }
+.popupbox
+{
+	width: 100%; margin: 0 auto;
+	display: none; position: fixed; z-index: 101;
+}
+.window
+{
+	width: 360px; height:266px;
+	min-width: 362px; min-height: 95px;
+	margin: 80px auto; padding: 1px; background: #e6e6e6;
+	position: relative; z-index: 103; border-radius: 5px;
+	box-shadow: 0 2px 5px #000;
+}
+.window p
+{
+	color: #555555; clear: both;
+	text-align: justify;
+}
+.window p a { color: #d91900; font-weight: bold;}
+.window .close
+{
+	width: 34px; height: 35px; top: -25px; left: 22px;
+	float: right; position: relative;
+}
+.window .close:hover { cursor: pointer;}
+</style>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
 </head>
@@ -287,40 +324,10 @@ MAke the image responsive jfc i want to die-->
 </div>
 </div>
 </h3>
-
-
-<div class="popup">
-<div id="draggable2" class="window" style="display: inline-block;">
-<div class="responsive">
-  <div class="title-bar">
-    <div class="title-bar-text">HOT ASIANS IN YOUR AREA</div>
-    <!--W98 Box Buttons-->
-    <div class="title-bar-controls">
-      <button onclick="showOrHideDiv3()" aria-label="Minimize">
-        <svg width="6" height="2" viewBox="0 0 6 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="6" height="2" fill="black"/>
-      </svg>
-    </button>
-      <button aria-label="Maximize">
-        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0H0V2V8V9H1H8H9V8V2V0ZM8 2H1V8H8V2Z" fill="black"/>
-        </svg>
-      </button>
-      <button onclick="CloseDiv2()" aria-label="Close">
-        <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H1H2V1H3V2H4H5V1H6V0H7H8V1H7V2H6V3H5V4H6V5H7V6H8V7H7H6V6H5V5H4H3V6H2V7H1H0V6H1V5H2V4H3V3H2V2H1V1H0V0Z" fill="black"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div id="showOrHide3" class="window-body">
-    <p><img src="https://i.postimg.cc/Gmb0S9dF/DHx9j-dztzee-UKyl-Mg-Mwz5-Zsn-p-F8mn-QY1x-CEg-U59k-Q.png" class="responsive" /></p>
-</div>
-</div>
-</div>
-</div>
-
-
+<div class='popup'>
+        <div class="img">
+            <img src="https://i.postimg.cc/Gmb0S9dF/DHx9j-dztzee-UKyl-Mg-Mwz5-Zsn-p-F8mn-QY1x-CEg-U59k-Q.png" alt='quit' class='x' id='x' />
+        </div>
 </body>
 <SCRIPT TYPE="text/javascript"> function popup(mylink, windowname) { if (! window.focus)return true; var href; if (typeof(mylink) == 'string') href=mylink; else href=mylink.href; window.open(href, windowname, 'width=400,height=200,scrollbars=yes'); return false; } </SCRIPT>
 <script>
@@ -346,6 +353,24 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+</script>
+<script type='text/javascript'>
+        $(function () {
+            var container = $('<div id="container"></div>');
+            container.show();
+            container.appendTo(document.body);
+            $('.popupbox').show();
+            $('.close').click(function () {
+                $('.popupbox').hide();
+                container.appendTo(document.body).remove();
+                return false;
+            });
+            $('.close').click(function () {
+                $('.popupbox').hide();
+                container.appendTo(document.body).remove();
+                return false;
+            });
+        });
 </script>
 <center><p style="Color:white"><i>Mountain Blue℠ 2022</i></p></center>
 </html>
