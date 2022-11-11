@@ -80,34 +80,6 @@ body {
     text-align: left;
   }
 </style>
-<style>
-.window a { text-decoration: none; }
-.popupbox
-{
-	width: 100%; margin: 0 auto;
-	display: none; position: fixed; z-index: 101;
-}
-.window
-{
-	width: 360px; height:266px;
-	min-width: 362px; min-height: 95px;
-	margin: 80px auto; padding: 1px; background: #e6e6e6;
-	position: relative; z-index: 103; border-radius: 5px;
-	box-shadow: 0 2px 5px #000;
-}
-.window p
-{
-	color: #555555; clear: both;
-	text-align: justify;
-}
-.window p a { color: #d91900; font-weight: bold;}
-.window .close
-{
-	width: 34px; height: 35px; top: -25px; left: 22px;
-	float: right; position: relative;
-}
-.window .close:hover { cursor: pointer;}
-</style>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
 </head>
@@ -315,11 +287,8 @@ MAke the image responsive jfc i want to die-->
 </div>
 </div>
 </h3>
-<div class='popup'>
-        <div class="img">
-            <img src="https://i.postimg.cc/Gmb0S9dF/DHx9j-dztzee-UKyl-Mg-Mwz5-Zsn-p-F8mn-QY1x-CEg-U59k-Q.png" alt='quit' class='x' id='x' />
-        </div>
 </body>
+<script>
 $( function() {
     $( "#draggable" ).draggable();
   } );
@@ -330,8 +299,6 @@ $( function() {
 $( function() {
     $( "#draggable2" ).draggable();
   } );
-
-
 </script>
 <script>
 function myFunction() {
@@ -342,24 +309,6 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-</script>
-<script type='text/javascript'>
-        $(function () {
-            var container = $('<div id="container"></div>');
-            container.show();
-            container.appendTo(document.body);
-            $('.popupbox').show();
-            $('.close').click(function () {
-                $('.popupbox').hide();
-                container.appendTo(document.body).remove();
-                return false;
-            });
-            $('.close').click(function () {
-                $('.popupbox').hide();
-                container.appendTo(document.body).remove();
-                return false;
-            });
-        });
 </script>
 <center><p style="Color:white"><i>Mountain Blue℠ 2022</i></p></center>
 </html>
